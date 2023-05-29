@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html lang=" http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devian Resorts</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        body {
+            background-color: #343948;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        table {
+            border-spacing: 0;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        tr {
+            margin: 0;
+            padding: 0;
+            border: none !; 
+        }
+        td {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        img {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #343948;
+            padding-top: 10px;
+            padding-bottom: 60px;
+        }
+        .main {
+            background-color: #343948;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-spacing: 0;
+            font-family: sans-serif;
+        }
+        .banner {
+            background-image: url('https://i.ibb.co/qgyyJfv/banner.jpg');
+            border: none;
+            background-size: cover;
+            background-position: center;
+            width: 600px;
+            height: 450px;
+        }
+        .banner-content .devian {
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            letter-spacing: 2px;
+            font-size: 45px;
+            color: #3897f0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .banner-content .resorts {
+            color:#fff;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            letter-spacing: 4px;
+            color: #3897f0;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+        .banner-content td {
+            text-align: center;
+        }
+        .banner-content a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 290px;
+        }
+        .title {
+            padding-bottom: 15px;
+            
+        }
+        .one {
+            padding-right: 10px;
+            padding-left: 5px;
+        }
+        .two {
+           padding-right: 10px;
+        }
+        .three {
+            padding-right: 10px;
+        }
+        .para1 {
+            font-size: 24px; 
+            text-transform: uppercase; 
+            color: #b1a8a8;  
+            letter-spacing:1px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            margin-top: 8px;
+            margin-bottom: 0;
+
+        }
+        .para2 {
+            font-size: 14px; 
+            line-height: 30px; 
+            padding: 5px 0 15px; 
+            color: #fff; 
+            font-family: Arial, Helvetica, sans-serif; 
+            padding: 5px 45px;
+            margin: 10px 20px 35px 20px;
+            
+        }
+        .button {
+            background-color: #fff;
+            text-decoration: none;
+            color: #000;
+            padding: 10px 26px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .button-little {
+            background-color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            text-align: center;
+            color: #000;
+            padding: 6px 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .breakup-banner {
+            background-color: #b3b3b3;
+            text-align: center;
+            padding: 5px;
+        }
+        .two-columns .column-image {
+            width: 100%;
+            max-width: 300px;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 16px;
+        }
+        .two-columns .column-text {
+            width: 100%;
+            max-width: 300px;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 16px;
+            padding: 20px 20px;
+        }
+        .two-columns {
+            background-color: #0c4785;
+            text-align: center;
+            font-size: 0;
+        }
+        .two-columns .zigzag-header {
+            text-align: center;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .two-columns .zigzag-text {
+            text-align: center;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            letter-spacing: 1px;
+            line-height: 30px;
+            padding-top: 5px;
+            padding-bottom: 26px;
+        }
+        .closing-banner {
+            background-color: #141313;
+            padding: 25px;
+            color: #fff;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .footer {
+            background-color: #141313;
+            padding-bottom: 40px;
+            padding-top: 20px;
+            color: #fff;
+        }
+        .devian-footer {
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            letter-spacing: 2px;
+            font-size: 30px;
+            padding-top: 5px;
+        }
+        .resorts-footer {
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            letter-spacing: 3px;
+            font-size: 14px;
+            padding-top: 2px;
+        }
+        .footer-call-to-action {
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            letter-spacing: 2px;
+            font-size: 26px;
+        }
+        .footer-call {
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            letter-spacing: 3px;
+            font-size: 12px;
+            padding-top: 10px;
+        }
+        .contact {
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 14px;
+            padding: 25px 0 25px;
+        }
+        .socials {
+            text-align: center;
+            padding: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <center class="wrapper">
+
+        <table class="main" width="100%">
+
+        
+            <!-- Header & Banner Image -->
+            <tr>
+                <td>
+
+           <table class="banner" width="100%">
+            <tr>
+                <td>
+                    <table class="banner-content" width="100%" style="margin-bottom: 290px;">
+                        <tr>
+                            <td class="title">
+                                <p class="devian">Devian</p>
+                                <p class="resorts">Resorts</p>  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="links">
+                                <a class="one" href="#">Special Offers</a>
+                                <a class="two" href="#">Events</a>
+                                <a class="three" href="#">Contact Us</a>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </td>
+            </tr>
+
+           </table>
+        </td>
+    </tr>
+         
+
+
+            <!-- Title Text and Button-->
+            <tr>
+                <td>
+                    <table width="100%" style="max-width: 600px; background-color: #003975;">
+            
+                        <tr style="background-color: #003975; width: 100%;">
+                            <td style="text-align: center; padding: 25px 25px 40px 25px;">
+            
+                                <p class="para1">Escape in Luxury</p>
+                                <p class="para2">Experience fine dining, exquisite cocktails and vivacious nightlife all within walking distance from beautiful Miami beach. </p>
+                                <a href="#" class="button">Reserve</a>
+            
+                            </td>
+                        </tr>
+            
+                    </table>
+                </td>
+            </tr>
+            <!-- Break Up Banner  -->
+            <tr>
+                <td class="breakup-banner">
+                    <table></table>
+                </td>
+            </tr>
+            <!-- Two Column Section 1-->
+            <tr>
+                <td>
+                    <table class="container-drop-down" width="100%">
+                        <tr>
+                            <td class="two-columns">
+                            
+                                <table class="column-text" style="height: 255px;">
+                                    <tr>
+                                        <td class="padding">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td class="box" style="text-align: center;">
+                                                        <p class="zigzag-header">Limited Deals</p>
+                                                        <p class="zigzag-text">Why say no to 3? Stay 2 nights and get your 3rd free.</p>
+                                                        <a href="#" class="button-little">Reserve</a>
+                                                    </td>
+                                                </tr>
+                                            </table> 
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="column-image" style="height: 255px;">
+                                    <tr>
+                                        <td class="padding">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td class="box">
+                                                        <img src="https://i.ibb.co/y8g97st/pool-lounge.jpg" alt=""  width="300" style="max-width: 300px; height: 255px;">
+                                                    </td>
+                                                </tr>
+                                            </table> 
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Two Column Section 2-->
+            <tr>
+                <td>
+                    <table class="container-drop-down" width="100%">
+                        <tr>
+                            <td class="two-columns">
+                            
+                                <table class="column-image" style="height: 255px;">
+                                    <tr>
+                                        <td class="padding">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td class="box">
+                                                        <img src="https://i.ibb.co/McZPjqf/night-pool.jpg" alt="" width="300" style="max-width: 300px; height: 255px;">
+                                                    </td>
+                                                </tr>
+                                            </table> 
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                                <table class="column-text" style="height: 255px;">
+                                    <tr>
+                                        <td class="padding">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td class="box" style="text-align: center;">
+                                                        <p class="zigzag-header">Ocean Front Rooms</p>
+                                                        <p class="zigzag-text">Take your pick of any of our beautiful rooms facing Miami beach.</p>
+                                                        <a href="#" class="button-little">Reserve</a>
+                                                    </td>
+                                                </tr>
+                                            </table> 
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </td>
+            </tr>
+
+             <!-- Two Column Section 3-->
+             <tr>
+                <td>
+                    <table class="container-drop-down" width="100%">
+                        <tr>
+                            <td class="two-columns">
+                            
+                                <table class="column-text" style="height: 255px;">
+                                    <tr>
+                                        <td class="padding">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td class="box" style="text-align: center;">
+                                                        <p class="zigzag-header">Adventures of a lifetime</p>
+                                                        <p class="zigzag-text">Experience everything Miami has to offer from our central location.</p>
+                                                        <a href="#" class="button-little">Reserve</a>
+                                                    </td>
+                                                </tr>
+                                            </table> 
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                                <table class="column-image" style="height: 255px;">
+                                    <tr>
+                                        <td class="padding">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td class="box">
+                                                        <img src="https://i.ibb.co/0hKQJYh/rooftop-pool.jpg" alt="" width="300" style="max-width: 300px; height: 255px;">
+                                                    </td>
+                                                </tr>
+                                            </table> 
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </td>
+            </tr>
+              <!-- Break Up Banner  -->
+              <tr>
+                <td class="breakup-banner">
+                    <table></table>
+                </td>
+            </tr>
+            <!-- Banner -->
+            <tr>
+                <td class="closing-banner">
+                    <p class="footer-call-to-action">Dine With Us</p>
+                    <p class="footer-call">Evening Specials</p>
+                    
+                </td>
+            </tr>
+
+            <!-- Last Two Column Section  -->
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="two-columns">
+                            
+                                <table class="column" style="height: 225px;">
+                                    <tr>
+                                        <td style="height: 225px;">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td>
+                                                        <img src="https://i.ibb.co/fX585vV/plated-light.jpg" alt="" width="300" style="max-width: 300px; height: 225px;">
+                                                     </td>
+                                                    <td>
+                                                        <img src="https://i.ibb.co/bQJ8YJQ/fresh-taste.jpg" alt="" width="300" style="max-width: 300px; height: 225px;">
+                                                    </td>
+                                                </tr>
+                                            </table> 
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="footer" style="text-align: center;">
+                                <p class="devian-footer">Devian</p>
+                                <p class="resorts-footer">Resorts</p>
+                                <p class="contact"> Call 208-722-8374 | Visit devianresorts.com</p>
+                                <a class="socials" href="#"><img src="https://i.ibb.co/6v3cgQB/facebook-128.png" width="30px"></a>
+                                <a class="socials" href="#"><img src="https://i.ibb.co/7vWJyHT/instagram-128.png" width="30px"></a>
+                                <a class="socials" href="#"><img src="https://i.ibb.co/dtD8BhG/twitter-128.png" width="30px"></a>
+                                <a class="socials" href="#"><img src="https://i.ibb.co/VW9Pk81/kindpng-718233.png" width="30px" height="30px"></a>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+
+        </table>
+
+    </center>
+    
+</body>
+</html>
